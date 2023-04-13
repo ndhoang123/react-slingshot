@@ -26,7 +26,7 @@ jobs:
       - checkout
       - run: npm i
       - run: npm audit
-           
+
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
 workflows:
@@ -36,6 +36,6 @@ workflows:
       - test:
           requires:
             - build
-        - analyze:
+      - analyze:
           requires:
             - test
