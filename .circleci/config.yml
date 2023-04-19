@@ -42,4 +42,4 @@ jobs:
 workflows:
   say-hello-workflow:
     jobs:
-      - create_infrastructure
+      - smoke_test
